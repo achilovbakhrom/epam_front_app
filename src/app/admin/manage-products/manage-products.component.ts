@@ -7,7 +7,7 @@ import { ManageProductsService } from './manage-products.service';
 @Component({
   selector: 'app-manage-products',
   templateUrl: './manage-products.component.html',
-  styleUrls: ['./manage-products.component.scss']
+  styleUrls: ['./manage-products.component.scss'],
 })
 export class ManageProductsComponent implements OnInit {
   readonly columns = ['from', 'description', 'price', 'count', 'action'];

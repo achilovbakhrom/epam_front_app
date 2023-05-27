@@ -19,7 +19,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
   declarations: [
     OrdersComponent,
     ManageProductsComponent,
-    EditProductComponent
+    EditProductComponent,
   ],
   imports: [
     AdminRoutingModule,
@@ -30,8 +30,8 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     MatTableModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  providers: [OrdersService, ManageProductsService]
+  providers: [OrdersService, ManageProductsService],
 })
 export class AdminModule {}

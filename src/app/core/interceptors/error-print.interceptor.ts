@@ -3,7 +3,7 @@ import {
   HttpEvent,
   HttpHandler,
   HttpInterceptor,
-  HttpRequest
+  HttpRequest,
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { NotificationService } from '../notification.service';
@@ -26,7 +26,7 @@ export class ErrorPrintInterceptor implements HttpInterceptor {
             `Request to "${url.pathname}" failed. Check the console for the details`,
             0
           );
-        }
+        },
       })
     );
   }

@@ -4,14 +4,14 @@ import {
   EventEmitter,
   Input,
   Output,
-  ViewChild
+  ViewChild,
 } from '@angular/core';
 
 @Component({
   selector: 'app-cart-count-controls',
   templateUrl: './cart-count-controls.component.html',
   styleUrls: ['./cart-count-controls.component.scss'],
-  exportAs: 'countControls'
+  exportAs: 'countControls',
 })
 export class CartCountControlsComponent {
   @Input() count!: number;

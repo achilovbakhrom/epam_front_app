@@ -3,7 +3,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
   /** Key - item id, value - ordered amount */
@@ -25,7 +25,7 @@ export class CartService {
     }),
     shareReplay({
       refCount: true,
-      bufferSize: 1
+      bufferSize: 1,
     })
   );
 
@@ -46,7 +46,7 @@ export class CartService {
   private updateCount(id: string, type: 1 | -1): void {
     const val = this.#cartSource.getValue();
     const newVal = {
-      ...val
+      ...val,
     };
 
     if (!(id in newVal)) {

@@ -23,8 +23,8 @@ const interceptors: Provider[] = [
   {
     provide: HTTP_INTERCEPTORS,
     useClass: ErrorPrintInterceptor,
-    multi: true
-  }
+    multi: true,
+  },
 ];
 
 @NgModule({
@@ -42,15 +42,15 @@ const interceptors: Provider[] = [
     CartModule,
     HttpClientModule,
     MatBadgeModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   providers: [
     interceptors,
     {
       provide: CONFIG_TOKEN,
-      useValue: environment
-    }
+      useValue: environment,
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

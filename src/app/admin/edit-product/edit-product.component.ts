@@ -2,13 +2,13 @@ import {
   ChangeDetectionStrategy,
   Component,
   OnDestroy,
-  OnInit
+  OnInit,
 } from '@angular/core';
 import {
   AbstractControl,
   UntypedFormBuilder,
   UntypedFormGroup,
-  Validators
+  Validators,
 } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -23,7 +23,7 @@ import { NotificationService } from '../../core/notification.service';
   selector: 'app-edit-product',
   templateUrl: './edit-product.component.html',
   styleUrls: ['./edit-product.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EditProductComponent implements OnInit, OnDestroy {
   form: UntypedFormGroup;
@@ -45,7 +45,7 @@ export class EditProductComponent implements OnInit, OnDestroy {
       title: ['', Validators.required],
       description: ['', Validators.required],
       price: ['', Validators.required],
-      count: ['', Validators.required]
+      count: ['', Validators.required],
     });
   }
 

@@ -6,6 +6,6 @@ import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [FilePickerComponent],
   imports: [CommonModule, MatButtonModule],
-  exports: [FilePickerComponent]
+  exports: [FilePickerComponent],
 })
 export class FilePickerModule {}

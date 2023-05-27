@@ -1,0 +1,6 @@
+.angular
+
+build
+coverage
+
+*.html
