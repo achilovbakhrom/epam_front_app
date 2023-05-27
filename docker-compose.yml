@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  web: 
+    build: './shop-app'
+    ports: 
+      - 80:80
+    depends_on:
+      - spring
+  
