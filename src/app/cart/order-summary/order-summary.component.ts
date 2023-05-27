@@ -4,7 +4,7 @@ import { ProductCheckout } from '../../products/product.interface';
 @Component({
   selector: 'app-order-summary',
   templateUrl: './order-summary.component.html',
-  styleUrls: ['./order-summary.component.scss'],
+  styleUrls: ['./order-summary.component.scss']
 })
 export class OrderSummaryComponent {
   @Input() products!: ProductCheckout[];

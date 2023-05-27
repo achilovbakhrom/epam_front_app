@@ -4,7 +4,7 @@ import { ProductCheckout } from '../../products/product.interface';
 @Component({
   selector: 'app-product-item-checkout',
   templateUrl: './product-item-checkout.component.html',
-  styleUrls: ['./product-item-checkout.component.scss'],
+  styleUrls: ['./product-item-checkout.component.scss']
 })
 export class ProductItemCheckoutComponent {
   @Input() product!: ProductCheckout;

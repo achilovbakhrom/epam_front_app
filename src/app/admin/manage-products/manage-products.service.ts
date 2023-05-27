@@ -22,8 +22,8 @@ export class ManageProductsService extends ApiService {
         this.http.put(url, file, {
           headers: {
             // eslint-disable-next-line @typescript-eslint/naming-convention
-            'Content-Type': 'text/csv',
-          },
+            'Content-Type': 'text/csv'
+          }
         })
       )
     );
@@ -34,8 +34,8 @@ export class ManageProductsService extends ApiService {
 
     return this.http.get<string>(url, {
       params: {
-        name: fileName,
-      },
+        name: fileName
+      }
     });
   }
 }

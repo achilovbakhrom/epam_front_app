@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import {
+  UntypedFormBuilder,
+  UntypedFormGroup,
+  Validators
+} from '@angular/forms';
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { CheckoutService } from './checkout.service';
 import { ProductCheckout } from '../products/product.interface';
@@ -14,9 +18,9 @@ import { map, shareReplay } from 'rxjs/operators';
   providers: [
     {
       provide: STEPPER_GLOBAL_OPTIONS,
-      useValue: { displayDefaultIndicatorType: false },
-    },
-  ],
+      useValue: { displayDefaultIndicatorType: false }
+    }
+  ]
 })
 export class CartComponent implements OnInit {
   products$!: Observable<ProductCheckout[]>;
@@ -50,13 +54,13 @@ export class CartComponent implements OnInit {
       lastName: ['', Validators.required],
       firstName: ['', Validators.required],
       address: ['', Validators.required],
-      comment: '',
+      comment: ''
     });
 
     this.products$ = this.checkoutService.getProductsForCheckout().pipe(
       shareReplay({
         refCount: true,
-        bufferSize: 1,
+        bufferSize: 1
       })
     );
 
@@ -67,7 +71,7 @@ export class CartComponent implements OnInit {
       }),
       shareReplay({
         refCount: true,
-        bufferSize: 1,
+        bufferSize: 1
       })
     );
 

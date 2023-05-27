@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-file-picker',
   templateUrl: './file-picker.component.html',
-  styleUrls: ['./file-picker.component.scss'],
+  styleUrls: ['./file-picker.component.scss']
 })
 export class FilePickerComponent {
   @Input() file: File | null = null;

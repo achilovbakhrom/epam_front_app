@@ -16,8 +16,8 @@ import { CartCountControlsModule } from '../core/cart-count-controls/cart-count-
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    CartCountControlsModule,
+    CartCountControlsModule
   ],
-  exports: [ProductsComponent],
+  exports: [ProductsComponent]
 })
 export class ProductsModule {}

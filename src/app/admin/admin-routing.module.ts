@@ -7,24 +7,24 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 const routes: Routes = [
   {
     path: 'orders',
-    component: OrdersComponent,
+    component: OrdersComponent
   },
   {
     path: 'products',
-    component: ManageProductsComponent,
+    component: ManageProductsComponent
   },
   {
     path: 'products/new',
-    component: EditProductComponent,
+    component: EditProductComponent
   },
   {
     path: 'products/:productId',
-    component: EditProductComponent,
-  },
+    component: EditProductComponent
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AdminRoutingModule {}

@@ -8,7 +8,7 @@ import { CartCountControlsComponent } from '../../core/cart-count-controls/cart-
 @Component({
   selector: 'app-product-item',
   templateUrl: './product-item.component.html',
-  styleUrls: ['./product-item.component.scss'],
+  styleUrls: ['./product-item.component.scss']
 })
 export class ProductItemComponent implements OnInit {
   @Input() product!: Product;
@@ -41,7 +41,7 @@ export class ProductItemComponent implements OnInit {
       this.updateFocusIfNeeded(),
       shareReplay({
         bufferSize: 1,
-        refCount: true,
+        refCount: true
       })
     );
   }

@@ -8,7 +8,7 @@ import { Product } from './product.interface';
 import { ApiService } from '../core/api.service';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class ProductsService extends ApiService {
   createNewProduct(product: Product): Observable<Product> {

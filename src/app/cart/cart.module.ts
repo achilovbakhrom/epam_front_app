@@ -19,7 +19,7 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     CartComponent,
     ProductItemCheckoutComponent,
     CartShippingFormComponent,
-    OrderSummaryComponent,
+    OrderSummaryComponent
   ],
   imports: [
     CommonModule,
@@ -31,8 +31,8 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     MatFormFieldModule,
     MatInputModule,
     CartCountControlsModule,
-    MatProgressSpinnerModule,
+    MatProgressSpinnerModule
   ],
-  exports: [CartComponent],
+  exports: [CartComponent]
 })
 export class CartModule {}
