@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CartCountControlsModule } from '../core/cart-count-controls/cart-count-controls.module';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [ProductsComponent, ProductItemComponent],
@@ -16,8 +17,8 @@ import { CartCountControlsModule } from '../core/cart-count-controls/cart-count-
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    CartCountControlsModule
+    CartCountControlsModule,
   ],
-  exports: [ProductsComponent]
+  exports: [ProductsComponent],
 })
 export class ProductsModule {}
